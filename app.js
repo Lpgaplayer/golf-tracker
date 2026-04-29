@@ -3,7 +3,7 @@
 // DATA (ONLY DATA HERE)
 // =======================
 const workbooks = {
-  "Libro 1": Habilidades del Putt (Anotar número de putts metidos) [
+  "Libro 1": [
     "10 putts caída der→izq 3 pies",
     "10 putts caída izq→der 3 pies",
     "10 putts rectos 3 pies",
