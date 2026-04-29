@@ -1,4 +1,4 @@
-```javascript
+
 // =======================
 // DATA (ONLY DATA HERE)
 // =======================
@@ -190,4 +190,4 @@ document.addEventListener("DOMContentLoaded", () => {
   updateAuthBar();
   loadWorkbooks();
 });
-```
+
