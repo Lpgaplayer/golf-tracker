@@ -439,3 +439,17 @@ if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js")
     .catch(error => console.log("Service Worker error:", error));
 }
+function submitToSheet(name, exercise, attempts, made) {
+  fetch("https://script.google.com/macros/s/AKfycbzq0NrJJJLl7wow7PEUa4luYkj4s6ncWTNhXflhswS3mafjcWZSPhMnEF7QPJsk04Lf/exec", {
+    method: "POST",
+    body: JSON.stringify({
+      name: name,
+      exercise: exercise,
+      attempts: attempts,
+      made: made
+    })
+  })
+  .then(res => res.text())
+  .then(() => alert("Saved to coach sheet"))
+  .catch(() => alert("Error sending data"));
+}
