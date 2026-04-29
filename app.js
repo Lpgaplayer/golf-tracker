@@ -71,4 +71,4 @@
   "50 chips a bandera roja (corta), a una distancia de 3 pies",
   "50 chips a bandera amarilla (media), a una distancia de 4 pies",
   "50 chips a bandera azul (larga), a una distancia de 5 pies"
-],
+];
