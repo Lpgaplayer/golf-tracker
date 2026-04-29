@@ -1,4 +1,3 @@
-// ====== 1. WORKBOOKS (paste your full workbooks object here) ======
 const workbooks = {
 
 "Libro 1": [
@@ -406,4 +405,3 @@ const workbooks = {
 ]
 
 };
-
