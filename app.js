@@ -95,10 +95,17 @@ function login() {
     return;
   }
 
+  if (role === "coach") {
+  if (username.toLowerCase() !== "chela" || password !== "coach2026") {
+    alert("Solo Chela puede entrar como Coach.");
+    return;
+  }
+} else {
   if (password !== "1234") {
     alert("Contraseña incorrecta. Usa 1234.");
     return;
   }
+}
 
   currentUser = { name: username, role };
   localStorage.setItem("golfCurrentUser", JSON.stringify(currentUser));
