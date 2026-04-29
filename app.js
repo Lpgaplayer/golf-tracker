@@ -253,7 +253,9 @@ function saveResult(book, exercise, value) {
   saveUserData(data);
 
   loadHistory();
-  updateDashboard();
+updateDashboard();
+
+submitToSheet(currentUser.name, exercise, value, value);
 }
 
 function loadHistory() {
