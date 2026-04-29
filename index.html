@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0A5E2A">
+
+    <title>Golf Practice Tracker</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- iOS PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+    <!-- Chart.js CDN (for dashboard charts) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- jsPDF CDN (for PDF reports) -->
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Golf Practice Tracker</h1>
+</header>
+
+<!-- Simple Login Bar -->
+<section id="authBar">
+    <div id="authStatus"></div>
+    <button id="loginBtn" onclick="showLogin()">Iniciar sesión</button>
+    <button id="logoutBtn" onclick="logout()" style="display:none;">Cerrar sesión</button>
+</section>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <h3>Iniciar sesión</h3>
+    <p>Rol:</p>
+    <select id="roleSelect">
+      <option value="student">Estudiante</option>
+      <option value="coach">Coach</option>
+    </select>
+    <p>Nombre de usuario:</p>
+    <input id="usernameInput" type="text" placeholder="ej. Juan">
+    <p>Contraseña (demo: 1234 para todos):</p>
+    <input id="passwordInput" type="password">
+    <button onclick="login()">Entrar</button>
+    <button onclick="hideLogin()">Cancelar</button>
+  </div>
+</div>
+
+<nav class="bottom-nav">
+    <button onclick="showPage('home')">Inicio</button>
+    <button onclick="showPage('history')">Historial</button>
+    <button onclick="showPage('dashboard')">Dashboard</button>
+    <button onclick="showPage('profile')">Perfil</button>
+</nav>
+
+<main id="home" class="page active">
+    <h2>Libros de Trabajo</h2>
+    <p id="currentUserLabel"></p>
+    <div id="workbooks"></div>
+</main>
+
+<main id="history" class="page">
+    <h2>Historial</h2>
+    <div id="historyContent"></div>
+</main>
+
+<main id="dashboard" class="page">
+    <h2>Dashboard del Coach</h2>
+    <p>Solo visible para el rol <strong>Coach</strong>.</p>
+    <div id="coachWarning"></div>
+
+    <div id="dashboardContent" style="display:none;">
+        <h3>Resumen general</h3>
+        <div id="summaryStats"></div>
+
+        <h3>Progreso por Libro</h3>
+        <div id="progressBars"></div>
+
+        <h3>Gráfica de Promedios</h3>
+        <canvas id="avgChart" height="200"></canvas>
+
+        <h3>Reportes PDF</h3>
+        <p>Selecciona estudiante para generar PDF:</p>
+        <select id="studentSelect"></select>
+        <button onclick="generateStudentPDF()">Generar PDF</button>
+    </div>
+</main>
+
+<main id="profile" class="page">
+    <h2>Perfil</h2>
+    <p>Exporta tus resultados (usuario actual):</p>
+    <button onclick="exportResults()">Exportar JSON</button>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

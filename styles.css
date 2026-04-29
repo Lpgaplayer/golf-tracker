@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #0A5E2A;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#authBar {
+    background: #e8f3ec;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+#authBar button {
+    background: #0A5E2A;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.page {
+    display: none;
+    padding: 15px;
+    padding-bottom: 70px; /* space for bottom nav */
+}
+
+.page.active {
+    display: block;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #0A5E2A;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.bottom-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+.workbook {
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.exercise {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exercise label {
+    flex: 1;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 5px;
+}
+
+/* Modal login */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 320px;
+  border-radius: 8px;
+}
+
+/* Dashboard */
+.progress-container {
+    margin: 6px 0;
+}
+
+.progress-label {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.progress-bar-bg {
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress-bar-fill {
+    background: #0A5E2A;
+    height: 10px;
+    width: 0%;
+}
