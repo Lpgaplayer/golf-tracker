@@ -1,351 +1,409 @@
 // ====== 1. WORKBOOKS (paste your full workbooks object here) ======
 const workbooks = {
-  // ... use the big object we built earlier ...
+
+"Libro 1": [
+"10 putts caída der→izq 3 pies",
+"10 putts caída izq→der 3 pies",
+"10 putts rectos 3 pies",
+"10 putts caída der→izq 6 pies",
+"10 putts caída izq→der 6 pies",
+"10 putts rectos 6 pies",
+"10 putts caída der→izq 9 pies",
+"10 putts caída izq→der 9 pies",
+"10 putts rectos 9 pies",
+"10 putts caída der→izq 12 pies",
+"10 putts caída izq→der 12 pies",
+"10 putts rectos 12 pies",
+"10 putts caída der→izq 15 pies",
+"10 putts caída izq→der 15 pies",
+"10 putts rectos 15 pies",
+"25 putts desde 20 pies",
+"25 putts desde 30 pies",
+"25 putts desde 40 pies",
+"25 putts desde 50 pies",
+"50 chips roja 3 pies",
+"50 chips amarilla 4 pies",
+"50 chips azul 5 pies",
+"50 chips rough roja 3 pies",
+"50 chips rough amarilla 4 pies",
+"50 chips rough azul 5 pies"
+],
+
+"Libro 2": [
+"20 yardas pitch - distancia promedio (10 tiros)",
+"40 yardas pitch - distancia promedio (10 tiros)",
+"60 yardas pitch - distancia promedio (10 tiros)",
+"80 yardas pitch - bolas en green (10 bolas)",
+"80 yardas pitch - distancia promedio",
+"100 yardas pitch - bolas en green (10 bolas)",
+"100 yardas pitch - distancia promedio",
+"Hierros rectas 100 yardas",
+"Hierros izquierda 100 yardas",
+"Hierros derecha 100 yardas",
+"Hierros rectas 125 yardas",
+"Hierros izquierda 125 yardas",
+"Hierros derecha 125 yardas",
+"Hierros rectas 150 yardas",
+"Hierros izquierda 150 yardas",
+"Hierros derecha 150 yardas",
+"Hierros rectas 175 yardas",
+"Hierros izquierda 175 yardas",
+"Hierros derecha 175 yardas",
+"Hierros rectas 200 yardas",
+"Hierros izquierda 200 yardas",
+"Hierros derecha 200 yardas",
+"Driver bolas dentro de 30 yds"
+],
+
+"Libro 3": [
+"25 putts mano izquierda 3 pies",
+"25 putts mano derecha 3 pies",
+"25 putts normal 3 pies",
+"20 putts seguidos 3 pies",
+"10 putts seguidos 20 pies",
+"5 putts seguidos 5 pies",
+"25 putts der→izq 6 pies",
+"25 putts der→izq 7 pies",
+"10 putts der→izq 8 pies",
+"10 putts der→izq 9 pies",
+"25 putts izq→der 6 pies",
+"25 putts izq→der 7 pies",
+"10 putts izq→der 8 pies",
+"10 putts izq→der 9 pies",
+"30 chips dentro 3 pies roja",
+"20 chips dentro 3 pies amarilla",
+"10 chips dentro 3 pies azul",
+"3 chips seguidos roja",
+"3 chips seguidos amarilla",
+"3 chips seguidos azul",
+"50 chips salvadas (17 roja, 17 amarilla, 16 azul)",
+"10 pelotas 100 yardas",
+"10 pelotas 125 yardas",
+"10 pelotas 150 yardas",
+"15 alternadas 100-125-150",
+"Extra: meter desde 5 pies"
+],
+
+"Libro 4": [
+"25 putts mano izquierda 3 pies",
+"25 putts mano derecha 3 pies",
+"10 putts seguidos normal 3 pies",
+"10 seguidos 3 pies (círculo)",
+"Repetir círculo 2 veces",
+"Drill línea 3-6-9-12-15 pies (10)",
+"100 putts izq→der 5 pies",
+"100 putts der→izq 5 pies",
+"Putt derecho",
+"50 chips 3 pies corta",
+"50 chips 3 pies media",
+"50 chips 3 pies larga",
+"2 chips dentro hoyo corta",
+"25 chips rough corta",
+"15 chips rough media",
+"10 chips rough larga",
+"25 chips dentro hoyo corta",
+"Extra: 100 putts 5 pies"
+],
+
+"Libro 5": [
+"25 putts mano izquierda 3 pies",
+"25 putts mano derecha 3 pies",
+"10 putts seguidos normal 3 pies",
+"100 putts 4 pies",
+"25 putts mano izquierda 4 pies",
+"25 putts mano derecha 4 pies",
+"10 putts normales 4 pies",
+"25 putts der→izq 5 pies",
+"25 putts izq→der 5 pies",
+"25 putts rectos 5 pies",
+"20 putts der→izq 6 pies",
+"20 putts izq→der 6 pies",
+"20 putts rectos 6 pies",
+"10 golpes al tee 3 pies",
+"10 golpes al tee 5 pies",
+"10 golpes al tee 7 pies",
+"25 putts dentro 3 pies a 20 pies",
+"25 putts dentro 3 pies a 30 pies",
+"25 putts dentro 3 pies a 40 pies",
+"25 putts dentro 3 pies a 50 pies",
+"25 putts dentro 3 pies a 60 pies",
+"100 chips corta",
+"100 chips media",
+"100 chips larga",
+"Driving range objetivos",
+"Extra: 50 putts seguidos 3 pies"
+],
+
+"Libro 6": [
+"25 putts mano izquierda 3 pies",
+"25 putts mano derecha 3 pies",
+"10 putts normales 3 pies",
+"50 putts der→izq 4 pies",
+"25 putts der→izq 5 pies",
+"25 putts der→izq 6 pies",
+"10 putts der→izq 7 pies",
+"50 putts izq→der 4 pies",
+"25 putts izq→der 5 pies",
+"25 putts izq→der 6 pies",
+"10 putts izq→der 7 pies",
+"25 putts 25 pies",
+"25 putts 35 pies",
+"25 putts 45 pies",
+"25 putts 55 pies",
+"50 chips roja",
+"50 chips azul",
+"50 chips amarilla",
+"25 chips salvadas",
+"Fairways agarrados",
+"Greens 125",
+"Greens 100",
+"Greens 150",
+"Greens 50",
+"Greens par 3",
+"Extra: 60/100 chips 3 pies azul"
+],
+
+"Libro 7": [
+"25 putts mano izquierda 4 pies",
+"25 putts mano derecha 4 pies",
+"10 putts normales 4 pies",
+"10 seguidos 4 pies",
+"10 seguidos 5 pies",
+"10 seguidos 6 pies",
+"Drill línea 3-5-7-9-12 pies",
+"Repetir otro lado",
+"100 putts 5 pies",
+"50 putts 6 pies",
+"3 chips hoyo corto",
+"25 chips media",
+"25 chips larga",
+"50 chips media",
+"50 chips corta",
+"50 chips salvadas",
+"Terminar chipeando corto",
+"Extra: 10 chips seguidos 3 pies media"
+],
+
+"Libro 8": [
+"25 putts mano izquierda 3 pies",
+"25 putts mano derecha 3 pies",
+"10 putts normales 3 pies",
+"50 putts der→izq 4 pies",
+"25 putts der→izq 5 pies",
+"25 putts der→izq 6 pies",
+"10 putts der→izq 7 pies",
+"50 putts izq→der 4 pies",
+"25 putts izq→der 5 pies",
+"25 putts izq→der 6 pies",
+"10 putts izq→der 7 pies",
+"25 putts 25 pies",
+"25 putts 35 pies",
+"25 putts 45 pies",
+"25 putts 55 pies",
+"50 chips roja",
+"50 chips azul",
+"50 chips amarilla",
+"25 chips salvadas",
+"Fairways agarrados",
+"Greens 125",
+"Greens 100",
+"Greens 150",
+"Greens 50",
+"Greens par 3",
+"Extra: 60/100 chips 3 pies azul"
+],
+
+"Libro 9": [
+"25 putts mano izquierda 3 pies",
+"25 putts mano derecha 3 pies",
+"10 putts normales 3 pies",
+"10 putts 3 pies ojos cerrados",
+"10 putts 4 pies ojos cerrados",
+"50 putts der→izq 5 pies",
+"50 putts izq→der 5 pies",
+"25 putts der→izq 6 pies",
+"25 putts izq→der 6 pies",
+"20 putts rectos 7 pies",
+"10 putts rectos 10 pies",
+"25 putts 25 pies",
+"30 putts 35 pies",
+"40 putts 45 pies",
+"4/5 chips dentro 3 pies",
+"75 chips salvadas",
+"10 tiros 100 yds",
+"5 tiros 150 yds",
+"10 alternados 100-125",
+"5 tiros 150",
+"5 tiros 175",
+"7/10 driver fairway",
+"Extra: 50 putts 4 pies"
+],
+
+"Libro 10": [
+"25 putts mano izquierda 4 pies",
+"25 putts mano derecha 4 pies",
+"10 putts normales 4 pies",
+"25 seguidos 3 pies",
+"20 seguidos 4 pies",
+"15 seguidos 5 pies",
+"5 seguidos 6 pies",
+"3 seguidos 7 pies",
+"20 putts 10 pies",
+"10 putts 15 pies",
+"25 putts 20 pies",
+"5 putts 25 pies",
+"20 putts 30 pies",
+"5 putts 35 pies",
+"20 putts 40 pies",
+"5 putts 45 pies",
+"20 putts 50 pies",
+"10 chips corta",
+"5 chips media",
+"2 chips larga",
+"25 chips salvadas media",
+"25 chips salvadas larga",
+"50 chips rough media",
+"Extra: 10 chips 2 pies rough"
+],
+
+"Libro 11": [
+"25 putts mano izquierda 4 pies",
+"25 putts mano derecha 4 pies",
+"10 putts normales 4 pies",
+"50 putts der→izq 5 pies",
+"25 putts izq→der 5 pies",
+"10 chips roja 3 pies",
+"10 chips azul 4 pies",
+"10 chips amarilla 3 pies",
+"15 sets alternados",
+"10 chips rough media",
+"5 chips rough larga",
+"5 chips rough corta",
+"25 chips salvadas",
+"Fairways agarrados",
+"Tiros 220-250",
+"Tiros 200",
+"Tiros 175",
+"Tiros 150",
+"Tiros 125",
+"Tiros 100",
+"Greens par 3"
+],
+
+"Libro 12": [
+"25 putts mano izquierda 4 pies",
+"25 putts mano derecha 4 pies",
+"10 putts normales 4 pies",
+"10 putts 20 pies",
+"10 putts 30 pies",
+"10 putts 40 pies",
+"10 putts 50 pies",
+"9 hoyos putts distancia",
+"10 putts 10 pies",
+"9 putts 9 pies",
+"8 putts 8 pies",
+"7 putts 7 pies",
+"6 putts 6 pies",
+"5 putts 5 pies",
+"4 putts 4 pies",
+"3 putts 3 pies",
+"50 putts rectos 5 pies",
+"25 putts rectos 6 pies",
+"20 golpes tee 7 pies",
+"5 golpes tee 10 pies",
+"25 putts tee 3 pies",
+"10 putts tee 4 pies",
+"Extra: 15 putts 4 pies"
+],
+
+"Libro 13": [
+"5 chips 9 pies",
+"5 chips 15 pies",
+"5 chips 21 pies",
+"5 chips 27 pies",
+"5 chips 33 pies",
+"50 chips rough 5 pies",
+"25 putts mano izquierda 5 pies",
+"25 putts mano derecha 5 pies",
+"10 putts normales 5 pies",
+"15 putts der→izq 6-7-8 pies",
+"5 putts der→izq 10 pies",
+"15 putts izq→der 6-7-8 pies",
+"5 putts izq→der 10 pies",
+"50 putts seguidos 5 pies",
+"Extra: 25 putts 10 pies"
+],
+
+"Libro 14": [
+"25 putts mano izquierda 5 pies",
+"25 putts mano derecha 5 pies",
+"10 putts normales 5 pies",
+"25 putts puerta 3 pies",
+"25 putts puerta 4 pies",
+"25 putts puerta 5 pies",
+"25 putts puerta 6 pies",
+"20 golpes tee 7 pies",
+"10 golpes tee 9 pies",
+"3 golpes tee 12 pies",
+"25 putts 30 pies",
+"25 putts 50 pies",
+"25 putts 60 pies",
+"9 hoyos salvando juego",
+"Extra: 25 putts 6 pies"
+],
+
+"Libro 15": [
+"25 putts mano izquierda 5 pies",
+"25 putts mano derecha 5 pies",
+"10 putts normales 5 pies",
+"25 putts 3 pies",
+"15 putts 4 pies",
+"10 putts 5 pies",
+"Drill línea 3-5-7-9 pies izq→der",
+"Drill línea 3-5-7-9 pies der→izq",
+"25 putts ojos cerrados 25 pies",
+"25 putts ojos cerrados 35 pies",
+"1 putt 20 pies",
+"10 chips roja 3 pies",
+"10 chips amarilla 3 pies",
+"10 chips azul 3 pies",
+"50 chips rough media",
+"50 chips rough larga",
+"1 chip corta",
+"5/7 fairways",
+"Greens 150",
+"Greens 100",
+"Pitch 20-30-40-50 par 3",
+"Extra: 10 putts seguidos 5 pies"
+],
+
+"Libro 16": [
+"25 putts mano izquierda 5 pies",
+"25 putts mano derecha 5 pies",
+"10 putts normales 5 pies",
+"50 putts seguidos",
+"250 chips rough 3 pies",
+"Simulación hoyo 1 160 yds",
+"Simulación hoyo 2 140 yds",
+"Simulación hoyo 3 100 yds",
+"Simulación hoyo 4 160 yds",
+"Simulación hoyo 5 150 yds",
+"Simulación hoyo 6 125 yds",
+"Simulación hoyo 7 115 yds",
+"Simulación hoyo 8 200 yds",
+"Simulación hoyo 9 150 yds",
+"Extra: Visualización ronda perfecta"
+],
+
+"Libro 17": [
+"25 putts mano izquierda 5 pies",
+"25 putts mano derecha 5 pies",
+"10 putts normales 5 pies",
+"50 putts 3 pies",
+"50 putts 4 pies",
+"50 putts 5 pies",
+"50 putts 6 pies"
+]
+
 };
 
-// ====== 2. AUTH / STATE ======
-let currentUser = null;      // username
-let currentRole = null;      // "student" or "coach"
-
-function showPage(id) {
-    document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
-    document.getElementById(id).classList.add("active");
-}
-
-function showLogin() {
-    document.getElementById("loginModal").style.display = "block";
-}
-
-function hideLogin() {
-    document.getElementById("loginModal").style.display = "none";
-}
-
-function login() {
-    const role = document.getElementById("roleSelect").value;
-    const username = document.getElementById("usernameInput").value.trim();
-    const password = document.getElementById("passwordInput").value;
-
-    if (!username) {
-        alert("Escribe un nombre de usuario.");
-        return;
-    }
-    if (password !== "1234") {
-        alert("Contraseña incorrecta (demo: 1234).");
-        return;
-    }
-
-    currentUser = username;
-    currentRole = role;
-
-    localStorage.setItem("golfCurrentUser", JSON.stringify({ username, role }));
-
-    document.getElementById("authStatus").textContent =
-        `Conectado como ${username} (${role})`;
-    document.getElementById("loginBtn").style.display = "none";
-    document.getElementById("logoutBtn").style.display = "inline-block";
-    document.getElementById("currentUserLabel").textContent =
-        `Usuario actual: ${username}`;
-
-    hideLogin();
-    loadWorkbooks();
-    loadHistory();
-    updateDashboardVisibility();
-}
-
-function logout() {
-    currentUser = null;
-    currentRole = null;
-    localStorage.removeItem("golfCurrentUser");
-
-    document.getElementById("authStatus").textContent = "No conectado";
-    document.getElementById("loginBtn").style.display = "inline-block";
-    document.getElementById("logoutBtn").style.display = "none";
-    document.getElementById("currentUserLabel").textContent = "";
-
-    document.getElementById("workbooks").innerHTML = "";
-    document.getElementById("historyContent").innerHTML = "";
-    updateDashboardVisibility();
-}
-
-function restoreSession() {
-    const saved = localStorage.getItem("golfCurrentUser");
-    if (!saved) {
-        document.getElementById("authStatus").textContent = "No conectado";
-        return;
-    }
-    const { username, role } = JSON.parse(saved);
-    currentUser = username;
-    currentRole = role;
-
-    document.getElementById("authStatus").textContent =
-        `Conectado como ${username} (${role})`;
-    document.getElementById("loginBtn").style.display = "none";
-    document.getElementById("logoutBtn").style.display = "inline-block";
-    document.getElementById("currentUserLabel").textContent =
-        `Usuario actual: ${username}`;
-
-    loadWorkbooks();
-    loadHistory();
-    updateDashboardVisibility();
-}
-
-// ====== 3. DATA ACCESS (per user) ======
-function getAllData() {
-    return JSON.parse(localStorage.getItem("golfData") || "{}");
-}
-
-function getUserData(username) {
-    const all = getAllData();
-    return all[username] || {};
-}
-
-function setUserData(username, userData) {
-    const all = getAllData();
-    all[username] = userData;
-    localStorage.setItem("golfData", JSON.stringify(all));
-}
-
-// ====== 4. WORKBOOK RENDERING ======
-function loadWorkbooks() {
-    if (!currentUser) return;
-
-    const container = document.getElementById("workbooks");
-    container.innerHTML = "";
-
-    const userData = getUserData(currentUser);
-
-    Object.keys(workbooks).forEach(book => {
-        const div = document.createElement("div");
-        div.className = "workbook";
-
-        const title = document.createElement("h3");
-        title.textContent = book;
-        div.appendChild(title);
-
-        workbooks[book].forEach(ex => {
-            const exDiv = document.createElement("div");
-            exDiv.className = "exercise";
-
-            const value = (userData[book] && userData[book][ex]) || "";
-
-            exDiv.innerHTML = `
-                <label>${ex}</label>
-                <input type="number" value="${value}"
-                    onchange="saveResult('${book}', '${ex.replace(/'/g, "\\'")}', this.value)">
-            `;
-
-            div.appendChild(exDiv);
-        });
-
-        container.appendChild(div);
-    });
-}
-
-function saveResult(book, exercise, value) {
-    if (!currentUser) {
-        alert("Primero inicia sesión.");
-        return;
-    }
-
-    const userData = getUserData(currentUser);
-    if (!userData[book]) userData[book] = {};
-    userData[book][exercise] = value;
-
-    setUserData(currentUser, userData);
-    loadHistory();
-    if (currentRole === "coach") {
-        buildDashboard();
-    }
-}
-
-// ====== 5. HISTORY (per user) ======
-function loadHistory() {
-    if (!currentUser) return;
-
-    const historyDiv = document.getElementById("historyContent");
-    const userData = getUserData(currentUser);
-
-    historyDiv.innerHTML = "";
-
-    Object.keys(userData).forEach(book => {
-        const div = document.createElement("div");
-        div.className = "workbook";
-
-        div.innerHTML = `<h3>${book}</h3>`;
-
-        Object.keys(userData[book]).forEach(ex => {
-            div.innerHTML += `<p>${ex}: <strong>${userData[book][ex]}</strong></p>`;
-        });
-
-        historyDiv.appendChild(div);
-    });
-}
-
-// ====== 6. EXPORT JSON (current user) ======
-function exportResults() {
-    if (!currentUser) {
-        alert("Primero inicia sesión.");
-        return;
-    }
-    const data = JSON.stringify(getUserData(currentUser), null, 2);
-    const blob = new Blob([data], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `golf-results-${currentUser}.json`;
-    a.click();
-}
-
-// ====== 7. COACH DASHBOARD ======
-let avgChart = null;
-
-function updateDashboardVisibility() {
-    const warning = document.getElementById("coachWarning");
-    const content = document.getElementById("dashboardContent");
-
-    if (currentRole !== "coach") {
-        warning.textContent = "Inicia sesión como Coach para ver el dashboard.";
-        content.style.display = "none";
-        return;
-    }
-
-    warning.textContent = "";
-    content.style.display = "block";
-    buildDashboard();
-}
-
-function buildDashboard() {
-    const all = getAllData();
-
-    // Build student list for PDF select
-    const studentSelect = document.getElementById("studentSelect");
-    studentSelect.innerHTML = "";
-    Object.keys(all).forEach(username => {
-        const opt = document.createElement("option");
-        opt.value = username;
-        opt.textContent = username;
-        studentSelect.appendChild(opt);
-    });
-
-    // Summary stats: total students, total entries
-    let totalStudents = Object.keys(all).length;
-    let totalEntries = 0;
-
-    Object.values(all).forEach(userData => {
-        Object.values(userData).forEach(bookData => {
-            totalEntries += Object.keys(bookData).length;
-        });
-    });
-
-    document.getElementById("summaryStats").innerHTML =
-        `<p>Estudiantes: <strong>${totalStudents}</strong></p>
-         <p>Registros totales: <strong>${totalEntries}</strong></p>`;
-
-    // Progress bars per workbook (average completion across students)
-    const progressDiv = document.getElementById("progressBars");
-    progressDiv.innerHTML = "";
-
-    const workbookNames = Object.keys(workbooks);
-    const avgValues = [];
-
-    workbookNames.forEach(book => {
-        const totalFields = workbooks[book].length;
-        if (totalFields === 0) return;
-
-        let filledCount = 0;
-        let userCount = 0;
-
-        Object.values(all).forEach(userData => {
-            if (userData[book]) {
-                userCount++;
-                filledCount += Object.keys(userData[book]).length;
-            }
-        });
-
-        const maxPossible = totalFields * (userCount || 1);
-        const percent = maxPossible ? Math.round((filledCount / maxPossible) * 100) : 0;
-        avgValues.push(percent);
-
-        const container = document.createElement("div");
-        container.className = "progress-container";
-
-        container.innerHTML = `
-          <div class="progress-label">${book}: ${percent}% completado</div>
-          <div class="progress-bar-bg">
-            <div class="progress-bar-fill" style="width:${percent}%;"></div>
-          </div>
-        `;
-
-        progressDiv.appendChild(container);
-    });
-
-    // Chart.js bar chart of completion %
-    const ctx = document.getElementById("avgChart").getContext("2d");
-    if (avgChart) avgChart.destroy();
-    avgChart = new Chart(ctx, {
-        type: "bar",
-        data: {
-            labels: workbookNames,
-            datasets: [{
-                label: "% completado (promedio)",
-                data: avgValues,
-                backgroundColor: "rgba(10,94,42,0.7)"
-            }]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: { beginAtZero: true, max: 100 }
-            }
-        }
-    });
-}
-
-// ====== 8. PDF REPORT PER STUDENT ======
-async function generateStudentPDF() {
-    const select = document.getElementById("studentSelect");
-    const username = select.value;
-    if (!username) {
-        alert("No hay estudiantes con datos.");
-        return;
-    }
-
-    const userData = getUserData(username);
-    if (!Object.keys(userData).length) {
-        alert("Este estudiante no tiene datos.");
-        return;
-    }
-
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
-
-    let y = 10;
-    doc.setFontSize(16);
-    doc.text(`Reporte de Práctica - ${username}`, 10, y);
-    y += 8;
-
-    doc.setFontSize(11);
-
-    Object.keys(userData).forEach(book => {
-        if (y > 270) { doc.addPage(); y = 10; }
-        doc.setFont(undefined, "bold");
-        doc.text(book, 10, y);
-        y += 6;
-        doc.setFont(undefined, "normal");
-
-        Object.keys(userData[book]).forEach(ex => {
-            if (y > 280) { doc.addPage(); y = 10; }
-            const line = `${ex}: ${userData[book][ex]}`;
-            doc.text(line.substring(0, 90), 12, y);
-            y += 5;
-        });
-
-        y += 3;
-    });
-
-    doc.save(`reporte-${username}.pdf`);
-}
-
-// ====== 9. INIT ======
-restoreSession();
